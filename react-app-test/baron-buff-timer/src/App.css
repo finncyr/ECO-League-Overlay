@@ -1,0 +1,78 @@
+.App {
+  background-color: gray;
+}
+
+.Overlay {
+  position: relative;
+  width: 100%;
+
+  animation: fadein 2s;
+}
+
+.team-left h2{
+  color: white;
+  font: bold 24px Helvetica;
+  font-size: 40px;
+  position: absolute;
+  top: -23px;
+  left: 460px;
+  width: 100%;
+}
+
+.team-left h1{
+  color: white;
+  font: bold 24px Helvetica;
+  font-size: 56px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position: absolute;
+  top: -23px;
+  left: 353px;
+  width: 100%;
+}
+
+.team-right h2{
+  color: white;
+  font: bold 24px Helvetica;
+  font-size: 40px;
+  position: absolute;
+  top: -23px;
+  left: 1388px;
+  width: 100%;
+}
+
+.team-right h1{
+  color: white;
+  font: bold 24px Helvetica;
+  font-size: 56px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position: absolute;
+  top: -23px;
+  left: 1548px;
+  width: 100%;
+}
+
+.baron-timer{
+  border-style: solid;
+  border-color: #8CD790;
+  border-radius: 10px;
+  background-color: #285943;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  left: 1650px;
+}
+
+.baron-timer h1 {
+  font: bold Helvetica;
+  font-size: x-large;
+  letter-spacing: -1px;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
