@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import Overlay from './ECO_Overlay.png';
 import './App.css';
+import './Baron.js';
 
 let team_left = 'ECO'
 let score_left = '0'
@@ -9,10 +9,11 @@ let team_right = 'EKS'
 let score_right = '0'
 
 function App() {
+
   return (
     <div className="App">
       <div className="Overlay">
-        <img src={Overlay} />
+        <img src={Overlay} alt="Overlay" />
 
         <div className="team-left">
           <h2>{team_left}</h2>
@@ -21,7 +22,7 @@ function App() {
 
         <div className="team-right">
           <h2>{team_right}</h2>
-          <h1>{score_left}</h1>
+          <h1>{score_right}</h1>
         </div>
 
         <div className="baron-timer">
