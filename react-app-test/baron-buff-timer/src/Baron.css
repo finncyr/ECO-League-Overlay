@@ -12,7 +12,8 @@
 }
 
 .baron-buff-notification {
-	background: #fff;
+	background: rgb(47,77,74);
+	/*background: linear-gradient(0deg, rgba(47,77,74,1) 0%, rgba(43,71,69,1) 13%, rgba(27,37,35,1) 100%);*/
 	transition: .3s ease;
 	position: relative;
 	pointer-events: auto;
@@ -23,7 +24,7 @@
 	width: 300px;
 	max-height: 100px;
 	border-radius: 3px 3px 3px 3px;
-	box-shadow: 0 0 10px #999;
+	box-shadow: 0 0 10px #354251;
 	color: #000;
 	opacity: .9;
 	background-position: 15px;
@@ -31,6 +32,7 @@
 }
 
 .baron-buff-title {
+	color: #fff;
 	font-weight: 700;
 	font-size: 18px;
 	text-align: left;
@@ -41,6 +43,7 @@
 }
 
 .baron-buff-countdown {
+	color: #fff;
 	margin: 0;
 	text-align: left;
     height: 18px;

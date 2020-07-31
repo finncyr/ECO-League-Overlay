@@ -7,6 +7,7 @@ let team_left = 'ECO'
 let score_left = '0'
 let team_right = 'EKS'
 let score_right = '0'
+var baron_active = false;
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
         </div>
 
         <div className="baron-timer">
-          <Baron />
+          <Baron active={baron_active}/>
         </div>
       </div>
     </div>
