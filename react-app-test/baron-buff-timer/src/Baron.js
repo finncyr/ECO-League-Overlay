@@ -30,19 +30,17 @@ function Baron(props){
     BaronTimer(3,0, active);
     if(active){
         return(
-            <>
-                <div className="baron-buff">
-                    <div className="baron-buff-notification">
-                        <div className="baron-buff-icon">
-                            <img src={BaronIcon} alt=""/>
-                        </div>
-                        <div>
-                            <p className="baron-buff-title">BARON BUFF</p>
-                            <p className="baron-buff-countdown" id="baron-cd">03:00</p>
-                        </div>
+            <div className="baron-buff">
+                <div className="baron-buff-notification">
+                    <div className="baron-buff-icon">
+                        <img src={BaronIcon} alt=""/>
+                    </div>
+                    <div>
+                        <p className="baron-buff-title">BARON BUFF</p>
+                        <p className="baron-buff-countdown" id="baron-cd">03:00</p>
                     </div>
                 </div>
-            </>
+            </div>
         );
     }
     else{
