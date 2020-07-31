@@ -57,10 +57,6 @@
 }
 
 .baron-timer{
-  border-style: solid;
-  border-color: #8CD790;
-  border-radius: 10px;
-  background-color: #285943;
   width: 200px;
   height: 100px;
   position: absolute;
@@ -68,14 +64,6 @@
   left: 1650px;
 }
 
-.baron-timer h1 {
-  font: bold Helvetica;
-  font-size: x-large;
-  letter-spacing: -1px;
-  color: white;
-  position: relative;
-  text-align: center;
-}
 
 @keyframes fadein {
   from { opacity: 0; }

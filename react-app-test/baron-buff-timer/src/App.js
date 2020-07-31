@@ -1,7 +1,7 @@
 import React from 'react';
 import Overlay from './ECO_Overlay.png';
 import './App.css';
-import './Baron.js';
+import Baron from './Baron.js';
 
 let team_left = 'ECO'
 let score_left = '0'
@@ -26,7 +26,7 @@ function App() {
         </div>
 
         <div className="baron-timer">
-          <h1>BARON BUFF</h1>
+          <Baron />
         </div>
       </div>
     </div>

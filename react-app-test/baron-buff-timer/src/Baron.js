@@ -4,7 +4,7 @@ import './Baron.css';
 
 function BaronTimer(minutes, seconds) {
     var time = minutes*60+seconds;
-    var interval = setInterval(function(){
+    setInterval(function(){
         var el = document.getElementById("baron-cd")
 
         var minutes = Math.floor(time/60);
@@ -18,10 +18,8 @@ function BaronTimer(minutes, seconds) {
     }, 1000);
 }
 
-function Baron() {
-    
+function Baron(props){
     BaronTimer(3,0);
-
     return(
         <>
             <div className="baron-buff">
@@ -36,5 +34,7 @@ function Baron() {
                 </div>
             </div>
         </>
-    )
+    );
 }
+
+export default Baron;

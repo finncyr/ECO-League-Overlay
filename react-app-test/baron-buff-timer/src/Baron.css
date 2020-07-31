@@ -32,7 +32,7 @@
 
 .baron-buff-title {
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 18px;
 	text-align: left;
 	margin-top: 0;
 	margin-bottom: 6px;
@@ -51,13 +51,16 @@
 }
 
 .baron-buff-icon {
-    float: left;
-    margin-right: 15px;
+	float: left;
+    padding: 24px;
 }
 
 .baron-buff-icon img {
-    width: 30px;
-    height: 30px;
+	left: -5px;
+	top: -5px;
+    width: 90px;
+	position: absolute;
+	overflow: hidden;
 }
 
 .toast {
