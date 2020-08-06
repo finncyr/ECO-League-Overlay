@@ -25,8 +25,7 @@ function BaronTimer(minutes, seconds, active) {
 }
 
 function Baron(props){
-    var active = props.active;
-    active = true;
+    var active;
     BaronTimer(3,0, active);
     if(active){
         return(

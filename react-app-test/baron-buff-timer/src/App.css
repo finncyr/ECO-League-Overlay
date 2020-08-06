@@ -11,7 +11,7 @@
   position: relative;
   width: 100%;
 
-  animation: fadein 2s;
+  /*animation: fadein 2s;*/
 }
 
 .team-left h2{
@@ -20,8 +20,9 @@
   font-size: 40px;
   position: absolute;
   top: -23px;
-  left: 460px;
-  width: 100%;
+  left: 439px;
+  width: 130px;
+  text-align: center;
 }
 
 .team-left h1{
@@ -32,7 +33,8 @@
   position: absolute;
   top: -23px;
   left: 353px;
-  width: 100%;
+  width: 32px;
+  animation: fadein 0.5s;
 }
 
 .team-right h2{
@@ -41,8 +43,9 @@
   font-size: 40px;
   position: absolute;
   top: -23px;
-  left: 1388px;
-  width: 100%;
+  left: 1364px;
+  width: 130px;
+  text-align: center;
 }
 
 .team-right h1{
@@ -53,7 +56,8 @@
   position: absolute;
   top: -23px;
   left: 1548px;
-  width: 100%;
+  width: 32px;
+  animation: fadein 0.5s;
 }
 
 .baron-timer{
@@ -68,4 +72,9 @@
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+@keyframes flip {
+  from { transform: rotateY(0deg);  }
+  to   { transform: rotateY(180deg);}
 }
