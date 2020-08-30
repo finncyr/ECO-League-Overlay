@@ -3,6 +3,7 @@ import Nash_icon from './Baron_NashorSquare.png';
 import './Timers.css';
 
 class TimerNash extends React.Component {
+
     constructor () {
         super(...arguments);
         this.state = { show: false };
@@ -18,22 +19,19 @@ class TimerNash extends React.Component {
     }
 
     componentDidMount(){
-        //fetch('https://127.0.0.1:2999/liveclientdata/eventdata')
-        fetch('https://static.developer.riotgames.com/docs/lol/liveclientdata_events.json')
+            fetch('https://127.0.0.1:2999/liveclientdata/eventdata')
+            //fetch('https://static.developer.riotgames.com/docs/lol/liveclientdata_events.json')
             .then(res => res.json())
             .then(
-                (result) => {
+                result => {
                     const events = result['Events'];
                     for(let i = 0; i < events.length; i++){
                         if (events[i]['EventName'] === "BaronKill"){
                             this.setState({show: true});
                             BaronTimer(3,0);
-                            this.setState({show: false});
+                            setTimeout(() => {this.setState({show: false});},182000); //183000
                         }
                     }
-               },
-               (error) => {
-                   console.log("Error in API Call!");
                }
             )
     }
@@ -48,7 +46,8 @@ function BaronTimer(minutes, seconds) {
 
         if(time <= 0){
             clearInterval(interval);
-            return;
+            el.innerText = "00:00";
+            return false;
         }
 
         var minutes = Math.floor(time/60);
