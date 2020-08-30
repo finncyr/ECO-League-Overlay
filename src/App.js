@@ -2,9 +2,10 @@ import React from 'react';
 import Overlay from './ECO_Overlay.png';
 import './App.css';
 //import Baron from './Baron.js';
+import './Timers.js';
 import GameData from './GameData.json';
+import TimerNash from './Timers.js';
 
-//var baron_active = false;
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
           <h2>{GameData.kuerzel_right}</h2>
           <h1>{GameData.score_right}</h1>
         </div>
+
+        <TimerNash />
       </div>
     </div>
   );

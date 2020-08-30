@@ -1,0 +1,28 @@
+.hidden {
+    display: none;
+}
+
+div.TimerNash {
+    position: absolute;
+    top: 20px;
+    left: 1670px;
+    background-image: url(./Timer_BG.png);
+    width: 173px;
+    height: 65px;
+    flex-flow: row;
+}
+
+.TimerNash #icon {
+    display: inline-block;
+    width: 35px;
+    margin-left: 16%;
+    margin-top: 13px;
+}
+
+.TimerNash #baron-cd {
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    left: 73px;
+    top: 21px;
+}
