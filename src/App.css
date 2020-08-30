@@ -1,0 +1,80 @@
+.App {
+  background-color: rgba(0, 0, 0, 0);
+
+  position: relative;
+  min-width: 1920px;
+  min-height: 1080px;
+  height: 100%;
+}
+
+.Overlay {
+  position: relative;
+  width: 100%;
+
+  /*animation: fadein 2s;*/
+}
+
+.team-left h2{
+  color: white;
+  font: bold 24px Helvetica;
+  font-size: 40px;
+  position: absolute;
+  top: -23px;
+  left: 439px;
+  width: 130px;
+  text-align: center;
+}
+
+.team-left h1{
+  color: white;
+  font: bold 24px Helvetica;
+  font-size: 56px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position: absolute;
+  top: -23px;
+  left: 353px;
+  width: 32px;
+  animation: fadein 0.5s;
+}
+
+.team-right h2{
+  color: white;
+  font: bold 24px Helvetica;
+  font-size: 40px;
+  position: absolute;
+  top: -23px;
+  left: 1364px;
+  width: 130px;
+  text-align: center;
+}
+
+.team-right h1{
+  color: white;
+  font: bold 24px Helvetica;
+  font-size: 56px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position: absolute;
+  top: -23px;
+  left: 1548px;
+  width: 32px;
+  animation: fadein 0.5s;
+}
+
+.baron-timer{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  left: 1650px;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes flip {
+  from { transform: rotateY(0deg);  }
+  to   { transform: rotateY(180deg);}
+}

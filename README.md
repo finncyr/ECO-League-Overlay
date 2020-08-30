@@ -1,22 +1,24 @@
-# ECO-League-Overlay
+# ECO League Overlay
 
-## Plans for Overlay
+Dynamic League of Legends Spectator Overlay, written in React
 
- - Web-Based
- - Browser-Source-Overlay for OBS
- - Backend ~ node.js
- - Frontend ~ React/Vue
+## Installation
 
- ## Functions
+```
+npm install
+```
 
- - Baron Animation 
- - Baron Timer
- - Team-Name
- - Animated Team-Score (only to be activated when more than 1 game is played)
- - Drake-Timers
+## Usage
 
+1. Execute the following command and keep the terminal open
 
-### (maybe) funtions
+```
+npm start
+```
 
- - Killtracker for ECO Players
- - Item-Animation (like LEC Overlay)
+2. Integrate the adress `http://localhost:3000` as a browser source in OBS
+3. Change Game State in `src/GameData.json` dynamically
+
+## Shutdown
+
+To shutdown the Overlay simply kill the Terminal Window with `Ctrl + C` or by killing the Window
