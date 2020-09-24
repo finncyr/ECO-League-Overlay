@@ -22,3 +22,9 @@ npm start
 ## Shutdown
 
 To shutdown the Overlay simply kill the Terminal Window with `Ctrl + C` or by killing the Window
+
+## Roadmap
+
+- Integrate Baron / Drake Timers
+- Electron App to change Values
+- Dynamic Space for Sponsoring Displays
