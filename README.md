@@ -2,6 +2,9 @@
 
 Dynamic League of Legends Spectator Overlay, written in React
 
+*pls also view the [serverless variant](https://github.com/finncyr/ECO_LoL_Overlay_serverless) of this overlay*
+*it's much faster, editable directly in OBS and features some more details*
+
 ## Installation
 
 ```
